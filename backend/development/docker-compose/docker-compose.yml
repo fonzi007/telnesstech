@@ -1,0 +1,12 @@
+services:
+  db:
+    image: mysql:8.0
+    platform: linux/amd64
+    restart: always
+    ports:
+      - "3306:3306"
+    hostname: "mysql"
+    environment:
+      - "MYSQL_ROOT_PASSWORD=changeme"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
