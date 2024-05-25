@@ -1,6 +1,6 @@
 # Telness Tech
 
-The project is developed and run on IntelliJ IDEA.
+The project is developed and run on IntelliJ IDEA on Mac.
 
 ## How to run locally
 ### Backend
@@ -40,9 +40,9 @@ $ npm start
 
 ## Improvements
 
-Considering the time restriction, I didn't have time to implement everything. 
+Considering the time restriction and my little knowledge of frontend, I didn't have time to implement everything. 
 
-I made a very simple front end page which is made of a form with different field to submit, a click button to submit and send request. We should offer a better user experience by having a search bar taking msisdn as text input only, then tick filters we want. 
+I made a very simple front end page which is made of a form with different fields to fill and to submit, a click button to submit and send request. We should offer a better user experience by having a search bar taking msisdn as text input only, then tick filters we want. Also display the results in a table could be good too. 
 
-We should also add validation on the backend to validate user input.
-We should also handle pagination.
+We should also add validation on the backend to validate user input better: now the msidsn is not going through validation, only filters are validated.
+We should also handle pagination in case of bigger requests.
